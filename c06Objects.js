@@ -43,3 +43,18 @@ console.log("Updated Details of person 1: "  );
 console.log(person1);
 
 
+const personWithFunction = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue",
+    fullName: function(){
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+console.log("Deetails of person with function: "  );
+console.log(personWithFunction.fullName()); // only this will show the full name
+console.log(personWithFunction);  // this will not show the full object
+console.log(typeof personWithFunction);   
+
